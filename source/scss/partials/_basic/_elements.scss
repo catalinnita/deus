@@ -1,0 +1,67 @@
+/* ++++++++ ELEMENTS +++++++++ */
+
+ hr {
+	background-color: #bbb;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+.entry-contents ul li, 
+.page_contents ul li {
+	position: relative;
+	padding: 5px 0px;
+}
+
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; // Make sure images are scaled correctly. 
+	max-width: 100%; // Adhere to container width. 
+	display: block;
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+}
+
+.underline {
+	border-bottom: 2px solid $highlight-color;
+}
+
+// accessibility classes

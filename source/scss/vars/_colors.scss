@@ -1,0 +1,24 @@
+// GLOBALY USED COLORS ======
+
+$main-color				: #EE776C; 
+$highlight-color		: #1abc9c;
+
+$secondary-color		: #444444;
+$third-color			: #999999;
+
+$bg-color				: #ffffff;
+$bg-color-light			: #efefef;
+$bg-color-dark			: #cccccc;
+
+// ===========================
+
+$headings-color			: $main-color;
+$text-color				: $secondary-color;
+
+$link-color				: $secondary-color;
+$link-underline			: $highlight-color;
+
+$button-bg				: $highlight-color;
+$button-color			: white;
+$button-bg-hover		: rgba($highlight-color, .8);
+$button-color-hover		: white;

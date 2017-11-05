@@ -1,0 +1,18 @@
+{
+  "name": "wpfw-deus",
+  "version": "0.0.1",
+  "description": "Blogging WordPress theme built with sass and some js",
+  "homepage": "http://wpfw.net/themes/deus",
+  "author": "Catalin Nita",
+
+  "dependencies": {
+  
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"    
+
+  },
+  
+  "readme" : "it's fun",
+  "license": "MIT"
+}

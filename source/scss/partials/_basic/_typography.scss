@@ -1,0 +1,120 @@
+/* ++++++++ TYPOGRAPHY +++++++++ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	letter-spacing: $letter-spacing;	
+}
+
+* {
+	font-family: $default-font;
+	font-weight: $default-weight;
+	font-style: $default-style;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #555;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family : $heading-font;
+	font-weight : $heading-weight;
+	font-style  : $heading-style;
+	color: $headings-color;
+}
+
+h1 { font-size: 4em; line-height: 1em }
+h2 { font-size: 3em; line-height: 1em }
+h3 { font-size: 2.5em; line-height: 1em }
+h4 { font-size: 2em; line-height: 1em }
+h5 { font-size: 1.8em; line-height: 1em }
+h6 { font-size: 1.5em; line-height: 1em }
+
+p {
+	font-size: 1.25em;
+	line-height: 1.85em;
+	margin-bottom: 1.5em;
+	font-family: $text-font;
+	font-style: $text-style;
+	font-weight: $text-weight;
+	color: $text-color;
+}
+
+b,
+strong {
+	font-weight: $fbold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	margin-bottom: 1.5em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px $code-font;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}

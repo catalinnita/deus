@@ -1,0 +1,25 @@
+/* ++++++++ LINKS +++++++++ */
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	@include animate;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+	color: $link-color;
+}
+
+p > a {
+	border-bottom: 3px solid $link-underline;	
+	&:hover {
+		border-bottom-color: rgba( $link-underline, .5 );
+	}
+}

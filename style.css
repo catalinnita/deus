@@ -1,0 +1,377 @@
+/*
+Theme Name: WPFW Deus
+Theme URI: http://wpfw.net/themes/deus/
+Author: Catalin Nita
+Author URI: https://github.com/catalinnita
+Description: Deus was created to blog easily. Every time when I've tried to start a new blog I had serious problems in finding a clean and lightweight theme, without a thousand features and files. So I created Deus to serve this simple purpose. 
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: deus
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Install -> Start writing.
+*/
+/* 1. RESET & DEFAULT STYLING 
+	  + Reset
+	  + Typography
+	  + Elements
+	  + Links
+	  + Alignments
+	  + Clearings
+*/
+/* ++++++++ RESET +++++++++ */
+body {
+  display: block; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+::selection {
+  background: #d7d7d7; }
+
+::-moz-selection {
+  background: #d7d7d7; }
+
+body {
+  background: #ffffff; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""; }
+
+blockquote,
+q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+/* ++++++++ TYPOGRAPHY +++++++++ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  letter-spacing: -0.015em; }
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #EE776C; }
+
+h1 {
+  font-size: 4em;
+  line-height: 1em; }
+
+h2 {
+  font-size: 3em;
+  line-height: 1em; }
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1em; }
+
+h4 {
+  font-size: 2em;
+  line-height: 1em; }
+
+h5 {
+  font-size: 1.8em;
+  line-height: 1em; }
+
+h6 {
+  font-size: 1.5em;
+  line-height: 1em; }
+
+p {
+  font-size: 1.25em;
+  line-height: 1.85em;
+  margin-bottom: 1.5em;
+  font-family: georgia, "times new roman", times, serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #444444; }
+
+b,
+strong {
+  font-weight: 600; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  margin-bottom: 1.5em; }
+
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+/* ++++++++ ELEMENTS +++++++++ */
+hr {
+  background-color: #bbb;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+ul,
+ol {
+  margin: 0; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+.entry-contents ul li,
+.page_contents ul li {
+  position: relative;
+  padding: 5px 0px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block; }
+
+figure {
+  margin: 0; }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+th {
+  font-weight: bold; }
+
+.underline {
+  border-bottom: 2px solid #1abc9c; }
+
+/* ++++++++ LINKS +++++++++ */
+a {
+  color: #444444;
+  text-decoration: none;
+  transition: all 0.3s; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #444444; }
+
+p > a {
+  border-bottom: 3px solid #1abc9c; }
+  p > a:hover {
+    border-bottom-color: rgba(26, 188, 156, 0.5); }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+  right: 0; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+/* ++++++++ CLEARINGS +++++++++ */
+.clear {
+  clear: both; }
+
+#content {
+  max-width: 1080px;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative; }
+  #content .entry-content {
+    max-width: 600px;
+    margin-left: 180px; }
+
+.button {
+  font-size: 0.65em;
+  padding: 1em 3em;
+  border-width: 0;
+  outline: 0;
+  border-radius: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: lowercase;
+  background: #1abc9c;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .button:hover {
+    background: rgba(26, 188, 156, 0.8);
+    color: white; }
+  .button.button-small {
+    padding: .8em 2em;
+    font-size: 0.5em; }
+  .button.button-large {
+    padding: .75em 3em;
+    font-size: 1em; }
+  .button.button-full-width {
+    width: 100%; }
+  .button.button-ghost {
+    background: white;
+    border: 2px solid #1abc9c;
+    color: #1abc9c; }
+
+/*# sourceMappingURL=style.css.map */
