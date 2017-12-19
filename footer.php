@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer - new text here some new text for test
+ * The template for displaying the footer - new text here some new text for test and some other new text
  *
  * Contains the closing of the #content div and all content after.
  *
